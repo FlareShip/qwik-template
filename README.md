@@ -8,6 +8,16 @@
 
 ---
 
+## Getting Started
+- Clone the repo with:
+  ```bash
+  git clone https://github.com/FlareShip/qwik-template.git
+  ```
+- Install the dependencies using:
+  ```bash  
+  bun install
+  ```
+
 ## Project Structure
 
 This project is using Qwik with [QwikCity](https://qwik.dev/qwikcity/overview/) and [Bun](https://bun.sh). QwikCity is just an extra set of tools on top of Qwik to make it easier to build a full site, including directory-based routing, layouts, and more.
