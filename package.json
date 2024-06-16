@@ -1,0 +1,53 @@
+{
+  "name": "qwik-template",
+  "description": "A Template for Qwik City.",
+  "engines": {
+    "node": "^18.17.0 || ^20.3.0 || >=21.0.0"
+  },
+  "engines-annotation": "Mostly required by sharp which needs a Node-API v9 compatible runtime",
+  "private": true,
+  "trustedDependencies": [
+    "@biomejs/biome",
+    "esbuild",
+    "sharp"
+  ],
+  "trustedDependencies-annotation": "Needed for bun to allow running install scripts",
+  "type": "module",
+  "scripts": {
+    "biome": "biome",
+    "build": "qwik build",
+    "build.client": "vite build",
+    "build.preview": "vite build --ssr src/entry.preview.tsx",
+    "build.server": "vite build -c adapters/bun/vite.config.ts",
+    "build.types": "tsc --incremental --noEmit",
+    "deploy": "echo 'Run \"npm run qwik add\" to install a server adapter'",
+    "dev": "vite --mode ssr",
+    "dev.debug": "node --inspect-brk ./node_modules/vite/bin/vite.js --mode ssr --force",
+    "fmt": "biome format --write ./src",
+    "fmt.check": "biome format ./src",
+    "lint": "biome lint ./src --write",
+    "preview": "qwik build preview && vite preview --open",
+    "serve": "bun server/entry.bun.js",
+    "start": "vite --open --mode ssr",
+    "qwik": "qwik"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.8.1",
+    "@builder.io/qwik": "^1.5.7",
+    "@builder.io/qwik-city": "^1.5.7",
+    "@types/bun": "^1.1.4",
+    "@types/node": "^20.14.2",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "sass": "^1.77.5",
+    "tailwindcss": "3.4.4",
+    "typescript": "5.4.5",
+    "undici": "^6.19.0",
+    "vite": "^5.3.1",
+    "vite-tsconfig-paths": "^4.3.2"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "^5.0.18",
+    "classnames": "^2.5.1"
+  }
+}

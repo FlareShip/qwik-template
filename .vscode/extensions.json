@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "unifiedjs.vscode-mdx",
+    "biomejs.biome",
+    "syler.sass-indented",
+    "mrmlnc.vscode-scss",
+    "bradlc.vscode-tailwindcss",
+    "stivo.tailwind-fold"
+  ],
+  "unwantedRecommendations": []
+}
