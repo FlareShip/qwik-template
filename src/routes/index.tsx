@@ -5,7 +5,7 @@ export default component$(() => {
   return (
     <>
       <div class="p-4 absolute top-4 left-4 rounded-md border-blue-500 bg-blue-100 text-blue-600">
-        Hello Everyone, <span class="text-xs">I'm not a button!</span>{' '}
+        Hello The Developer, <span class="text-xs">I'm not a button!</span>{' '}
       </div>
     </>
   )
