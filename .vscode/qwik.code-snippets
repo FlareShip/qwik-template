@@ -16,7 +16,7 @@
     "description": "Qwik component w/ props",
     "body": [
       "import { component$ } from '@builder.io/qwik';\n",
-      "export interface ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}}Props {}\n",
+      "export type ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}}Props {}\n",
       "export default component$<$1Props>(() => {",
       "  return (",
       "    <>",
